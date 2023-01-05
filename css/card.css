@@ -2,6 +2,7 @@ main h1, main h2 {
     text-align: center;
 }
 
+/* Grid cards */
 .grid-cards {
     display: grid;
     justify-items: center;
@@ -36,10 +37,13 @@ main h1, main h2 {
     height: 100%;
 
     background: rgba(0, 0, 0, 0.5);
+
+    transform: scale(1);
+    transition: 200ms ease-in-out;
 }
 
 .full-image.hidden {
-    display: none;
+    transform: scale(0);
 }
 
 .full-image img {

@@ -118,10 +118,17 @@ section {
     p {
         padding: 1rem;
         width: 100% !important;
+
+        font-size: 1.3rem;
     }
 
     img {
         width: 100%;
+    }
+
+    ul {
+        padding-left: 3rem;
+        font-size: 1rem;
     }
 }
 
@@ -136,7 +143,7 @@ section {
         font-size: 2rem;
     }
     
-    h3, ul {
+    h3 {
         font-size: 1rem;
     }
 }
