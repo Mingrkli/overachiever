@@ -67,4 +67,9 @@ main h1, main h2 {
     .grid-cards {
         padding: 0 1rem;
     }
+
+    .full-image img {
+        height: 80%;
+        width: 100%;
+    }
 }
