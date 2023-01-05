@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --c-bg: #16161a;
+    --c-header: #fffffe;
+    --c-para: #94a1b2;
+    --c-button: #7f5af0;
+    --c-button-text: #fffffe;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    min-height: 100vh;
+
+    font-family: 'Playfair Display', serif;
+    background: url("../images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    width: 100%;
+}
+
+h1 {
+    padding-bottom: 1rem;
+
+    font-size: 5rem;
+    color: var(--c-header);
+}
+
+h2 {
+    font-size: 4rem;
+    color: var(--c-header);
+}
+
+h3, ul, p {
+    font-size: 1.5rem;
+    color: var(--c-para);
+}
+
+ul {
+    padding-left: 5rem;
+}
+
+img, picture, svg {
+    max-width: 100%;
+    display: block;
+}
+
+/* Nav
+===================================================================================== */
+nav {
+    display: flex;
+    justify-content: center;
+
+    height: 3rem;
+    width: 100%;
+    text-align: center;
+
+    background-color: var(--c-bg);
+}
+
+/* different pages */
+nav a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+
+    color: var(--c-button-text);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+
+    font-size: 2rem;
+}
+
+nav a[href="#"] {
+    color: var(--c-button);
+}
+
+nav a:hover {
+    border-bottom: 2px solid var(--c-button);
+}
+
+
+/* Sections
+===================================================================================== */
+section {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+/*
+Photo by <a href="https://unsplash.com/@jeremythomasphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeremy Thomas</a> on <a href="https://unsplash.com/backgrounds/nature/galaxy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+*/

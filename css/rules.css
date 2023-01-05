@@ -1,0 +1,21 @@
+main {
+    text-align: center;
+}
+
+main a {
+    padding: 1rem;
+
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--c-button-text);
+    background-color: var(--c-button);
+    border-radius: 10px;
+}
+
+main a:hover {
+    filter: brightness(150%);
+}
+
+main a:active {
+    filter: brightness(50%);
+}

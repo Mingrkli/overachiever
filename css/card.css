@@ -1,0 +1,64 @@
+main h1, main h2 {
+    text-align: center;
+}
+
+.grid-cards {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    gap: 1rem;
+
+    padding: 0 5rem;
+}
+
+.grid-cards img {
+    cursor: pointer;
+}
+
+.grid-cards img:hover {
+    box-shadow: 0 0 10px 5px var(--c-button);
+    transition: 200ms;
+}
+
+.grid-cards img:active {
+    filter: brightness(50%);
+}
+
+/* full image */
+.full-image {
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.full-image.hidden {
+    display: none;
+}
+
+.full-image img {
+    height: 90%;
+}
+
+.full-image .close-full-image-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    font-size: 5rem;
+    color: var(--c-button-text);
+    background: transparent;
+    border: transparent;
+
+    cursor: pointer;
+}
+
+.full-image .close-full-image-btn:hover {
+    color: var(--c-button);
+}

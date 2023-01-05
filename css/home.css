@@ -1,0 +1,29 @@
+.buff {
+    color: green;
+}
+
+.nerf {
+    color: red;
+}
+
+.unsure {
+    color: goldenrod;
+}
+
+.main-welcome, .main-upcoming {
+    align-items: center;
+}
+
+.main-welcome p {
+    width: 1200px;
+    text-align: center;
+}
+
+.main-upcoming img {
+    max-width: 1000px;
+}
+
+/* Updates section */
+.main-update {
+    align-items: center;
+}
