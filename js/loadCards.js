@@ -3,7 +3,6 @@ const dataLoadCards = allCards;
 
 const fullImageDiv = document.querySelector('.full-image');
 const fullImageDivImg = fullImageDiv.querySelector('img');
-const closeFullImageBtn = fullImageDiv.querySelector('button');
 
 // When window is Loaded
 window.addEventListener('DOMContentLoaded', () => {
@@ -11,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 // Close fullImage
-closeFullImageBtn.addEventListener('click', () => {
+fullImageDiv.addEventListener('click', () => {
     fullImageDiv.classList.add('hidden');
 })
 

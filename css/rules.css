@@ -19,3 +19,11 @@ main a:hover {
 main a:active {
     filter: brightness(50%);
 }
+
+@media (max-width: 410px) {
+    main a {
+        padding: 0;
+
+        font-size: 2rem;
+    }
+}

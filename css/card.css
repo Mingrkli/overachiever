@@ -62,3 +62,9 @@ main h1, main h2 {
 .full-image .close-full-image-btn:hover {
     color: var(--c-button);
 }
+
+@media (max-width: 900px) {
+    .grid-cards {
+        padding: 0 1rem;
+    }
+}
