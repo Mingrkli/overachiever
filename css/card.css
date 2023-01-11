@@ -2,6 +2,37 @@ main h1, main h2 {
     text-align: center;
 }
 
+h2 {
+    margin: 1rem;
+
+    border: 2px solid var(--c-button);
+    border-radius: 50px;
+}
+
+h2, i {
+    cursor: pointer;
+    user-select: none;
+    transition: 200ms ease-in-out;
+}
+
+h2:hover {
+    box-shadow: 0 0 10px 5px var(--c-button);
+}
+
+h2:hover, h2:hover i {
+    color: var(--c-button);
+    text-shadow: 0 0 10px var(--c-button);
+}
+
+h2:active {
+    filter: brightness(200%);
+    transition: 0ms ease-in-out;
+}
+
+.set-header i.rotate {
+    transform: rotate(180deg);
+}
+
 /* Grid cards */
 .grid-cards {
     display: grid;
@@ -10,6 +41,10 @@ main h1, main h2 {
     gap: 1rem;
 
     padding: 0 5rem;
+}
+
+.set-header + .grid-cards.hidden {
+    display: none;
 }
 
 .grid-cards img {

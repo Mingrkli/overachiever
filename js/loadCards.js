@@ -22,9 +22,9 @@ function loadSets() {
 
         // Create the set name header and the div which will contain all the cards from that set
         let inner = `
-            <h2>${dataLoadCards[set].SetName}</h2>
+            <h2 class="set-header">${dataLoadCards[set].SetName} <i class="fa-solid fa-chevron-up"></i></h2>
 
-            <div class="grid-cards">
+            <div class="grid-cards hidden">
                 
             </div>
         `
@@ -40,7 +40,7 @@ function loadSets() {
             gridCardsDiv.innerHTML += img;
         })
         
-        // create a eventLister for each of the imgs so that when clicked it will show full image
+        // create a EventListener for each of the imgs so that when clicked it will show full image
         gridCardsDiv.querySelectorAll('img').forEach(img => {
             img.addEventListener('click', e => {
                 fullImageDiv.classList.remove('hidden');
@@ -48,6 +48,12 @@ function loadSets() {
             })
         });
         
+        // create a EventListener on the "set-header" so that when clicked, it will collapsed/expand the cards
+        article.querySelector('h2.set-header').addEventListener('click', () => {
+            article.querySelector('h2.set-header + .grid-cards').classList.toggle('hidden');
+            article.querySelector('h2.set-header i').classList.toggle('rotate');
+        })
+
         // append the article into the site
         allSets.append(article);
     }
